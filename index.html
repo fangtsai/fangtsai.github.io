@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <title>Fang — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fang — 後端 / 全端工程師。Portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --pf-sans: 'Inter', 'Noto Sans TC', system-ui, sans-serif;
+      --pf-mono: 'JetBrains Mono', ui-monospace, 'Courier New', monospace;
+      --accent-b: #9bee17;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #0c0d0e;
+      font-family: var(--pf-mono);
+      color: #e7e5e4;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    * { box-sizing: border-box; }
+
+    #stage {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    #frame {
+      width: 1280px;
+      height: 820px;
+      transform-origin: center center;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="stage"><div id="frame"><div id="root"></div></div></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

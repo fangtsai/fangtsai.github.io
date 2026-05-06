@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.vite/
+
+# Local-only — internal notes, references, scratch (not for public repo)
+dev-notes/
+Portfolio.pdf
+homepage.html
